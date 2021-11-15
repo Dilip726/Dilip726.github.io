@@ -1,0 +1,3 @@
+redirects: 
+  redirects_to: index.html
+  try_files: true
