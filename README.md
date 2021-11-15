@@ -1,3 +1,3 @@
-# Dilip726.github.io
+# SutharDilip.github.io
 
 My personal website
