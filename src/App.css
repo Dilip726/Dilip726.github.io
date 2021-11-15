@@ -1,5 +1,9 @@
 /* Scroll up button */
 
+#root {
+    background: #eeeeee6a;
+}
+
 .scroll-up-btn {
     position: fixed;
     height: 45px;
