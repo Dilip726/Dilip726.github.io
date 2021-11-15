@@ -26,4 +26,9 @@ jobs:
         run: npm install
 
       - name: Build and Deploy  🚀
-        run: npm run deploy
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "${GITHUB_USER}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GITHUB_USER: ${{ secrets.AUTH_USER }}
