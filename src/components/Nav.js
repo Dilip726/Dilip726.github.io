@@ -9,7 +9,7 @@ export const Nav = () => {
           <div className="logo">
             {" "}
             <a href>
-              Dilip<span>Suthar</span>
+              Dilip{" "}<span>Suthar</span>
             </a>
           </div>
           <ul className="menu">
