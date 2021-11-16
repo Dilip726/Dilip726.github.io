@@ -2,20 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Nav = () => {
+  
   const [prevScrollPos, setPrevScrollPos] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
-    
-  const handleScroll = () => {
-
+  
+     const handleScroll = () => {
+    // find current scroll position
     const currentScrollPos = window.pageYOffset;
+
+    // set state based on location info (explained in more detail below)
     setVisible(
       (prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > 70) ||
         currentScrollPos < 10
     );
+
+    // set state to new scroll position
     setPrevScrollPos(currentScrollPos);
   };
 
+  // new useEffect:
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -23,12 +29,12 @@ export const Nav = () => {
   }, [prevScrollPos, visible, handleScroll]);
 
   const initial = {
-    position: "fixed", 
+    position: "fixed",
   };
-  
+
   const stylenew = {
     position: "fixed",
-    background: "black",
+    background: "#777",
   };
 
 
