@@ -7,10 +7,6 @@ export const Nav = () => {
   const [show, setShow] = React.useState(false);
   const [scroll, setScroll] = React.useState(0);
 
-  const changeInitial = {
-    width: "100vw",
-    backgroundColor: "black",
-  };
   console.log({ scroll });
 
   React.useEffect(() => {
@@ -45,7 +41,6 @@ export const Nav = () => {
     background: "#777",
   };
   
-
 
   return (
     <>
