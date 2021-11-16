@@ -3,11 +3,10 @@ import CallIcon from "@mui/icons-material/Call";
 import CodeIcon from "@mui/icons-material/Code";
 import WorkspacesIcon from "@mui/icons-material/Workspaces";
 import Card from "@mui/material/Card";
-// import CardMedia from "@mui/material/CardMedia";
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import { CardActionArea } from "@mui/material";
-// import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
@@ -40,6 +39,7 @@ export const Main = () => {
   const img = {
     width: "100%",
     height: "100vh",
+    objectFit:'center'
   };
   const head1 = {
     color: "darkolivegreen",
@@ -48,7 +48,7 @@ export const Main = () => {
 
   return (
     <>
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%"  }}>
         <div className="head" style={style}>
           <div className="headtitle">
             <h1>
@@ -248,13 +248,20 @@ export const Main = () => {
                 <div className="bars ">
                   <div className="info ">
                     <span>React JS</span>
-                    <span>45%</span>
+                    <span>75%</span>
                   </div>
                   <div className="line JS " />
                 </div>
                 <div className="bars ">
                   <div className="info ">
                     <span>Node Js</span>
+                    <span>40%</span>
+                  </div>
+                  <div className="line NodeJs " />
+                </div>
+                <div className="bars ">
+                  <div className="info ">
+                    <span>Express Js</span>
                     <span>35%</span>
                   </div>
                   <div className="line NodeJs " />
@@ -262,7 +269,7 @@ export const Main = () => {
                 <div className="bars ">
                   <div className="info ">
                     <span>MongoDB</span>
-                    <span>30%</span>
+                    <span>35%</span>
                   </div>
                   <div className="line MySQL " />
                 </div>
@@ -283,8 +290,8 @@ export const Main = () => {
                   style={{ width: "30px", height: "30px" }}
                 />
                 <div className="tag mx-4">
-                  <h4>Stack Summation - Full Time</h4>
-                  <h5>FullStack Developer</h5>
+                  <h4 className="companyName" id="company">Stack Summation - Full Time</h4>
+                  <h5 className="role">FullStack Developer</h5>
                 </div>
                 <div className="company-links">
                   <a
@@ -326,8 +333,8 @@ export const Main = () => {
                   style={{ width: "30px", height: "30px" }}
                 />
                 <div className="tag mx-4">
-                  <h4>Akash TechnoLabs - Internship</h4>
-                  <h5>Node JS Intern</h5>
+                  <h4 id="company">Akash TechnoLabs - Internship</h4>
+                  <h5 className="role">Node JS Intern</h5>
                 </div>
                 <div className="company-links">
                   <a
@@ -369,8 +376,8 @@ export const Main = () => {
                   style={{ width: "30px", height: "30px" }}
                 />
                 <div className="tag mx-4">
-                  <h4>Mitaja Corporstion - Full Time</h4>
-                  <h5>Bench Sales Recruiter</h5>
+                  <h4 id="company">Mitaja Corporstion - Full Time</h4>
+                  <h5 className="role">Bench Sales Recruiter</h5>
                 </div>
                 <div className="company-links">
                   <a
@@ -412,8 +419,8 @@ export const Main = () => {
                   style={{ width: "30px", height: "30px" }}
                 />
                 <div className="tag mx-4">
-                  <h4>Dash Technology Inc - Full Time</h4>
-                  <h5>Data Mining Specialist</h5>
+                  <h4 id="company">Dash Technology Inc - Full Time</h4>
+                  <h5 className="role">Data Mining Specialist</h5>
                 </div>
                 <div className="company-links">
                   <a
@@ -500,19 +507,19 @@ export const Main = () => {
                   <div className="icon ">
                     <div className="row ">
                       <div className="info ">
-                        <div className="head ">Name</div>
+                        <div className="head">Name</div>
                         <div className="sub-title ">Dilip Suthar</div>
                       </div>
                     </div>
-                    <div className="row ">
-                      <i className="fas fa-map-marker-alt " />
+                    <div className="row">
+                      {/* <i className="fas fa-map-marker-alt " /> */}
                       <div className="info ">
                         <div className="head ">Address</div>
                         <div className="sub-title ">Gujarat ,Ahmedabad</div>
                       </div>
                     </div>
                     <div className="row ">
-                      <i className="fas fa-envelope " />
+                      {/* <i className="fas fa-envelope " /> */}
                       <div className="info ">
                         <div className="head "> Email Id</div>
                         <div className="sub-title ">
@@ -533,7 +540,7 @@ export const Main = () => {
       <div className="footer">
         <footer>
           {" "}
-          <h5>Dilip Suthar - All Rights are reserved © 2021</h5>
+          <h5 className="footerhead" id="ft">Dilip Suthar - All Rights are reserved © 2021</h5>
         </footer>
       </div>
     </>

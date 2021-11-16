@@ -38,7 +38,7 @@ export const Nav = () => {
    height: "65px",
        display: "block",
     width: "100vw",
-    background: "rgb(126 126 126 / 75%)"
+    background: "rgb(4 3 3 / 76%)"
   };
   
 
