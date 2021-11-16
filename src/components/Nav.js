@@ -35,10 +35,9 @@ export const Nav = () => {
   };
 
   const changeInitial = {
-    background: "#777",
-   height: "65px";
-    width: "100vw";
-    background: "rgb(126 126 126 / 75%)";
+   height: "65px",
+    width: "100vw",
+    background: "rgb(126 126 126 / 75%)"
   };
   
 
