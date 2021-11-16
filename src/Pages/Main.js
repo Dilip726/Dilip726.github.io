@@ -3,7 +3,6 @@ import CallIcon from "@mui/icons-material/Call";
 import CodeIcon from "@mui/icons-material/Code";
 import WorkspacesIcon from "@mui/icons-material/Workspaces";
 import Card from "@mui/material/Card";
-import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import { CardActionArea } from "@mui/material";
