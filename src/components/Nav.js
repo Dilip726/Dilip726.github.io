@@ -1,14 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+ 
+var lastScroll = 0;
 
 export const Nav = () => {
- 
-  var lastScroll = 0;
-
-  const [show, setShow] = React.useState(false);
   const [scroll, setScroll] = React.useState(0);
-
-  console.log({ scroll });
 
   React.useEffect(() => {
     let handleScroll = () => {
