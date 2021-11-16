@@ -2,45 +2,59 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Nav = () => {
+ 
   
-  const [prevScrollPos, setPrevScrollPos] = React.useState(0);
-  const [visible, setVisible] = React.useState(true);
-  
-     const handleScroll = () => {
-    // find current scroll position
-    const currentScrollPos = window.pageYOffset;
-
-    // set state based on location info (explained in more detail below)
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 70) ||
-        currentScrollPos < 10
-    );
-
-    // set state to new scroll position
-    setPrevScrollPos(currentScrollPos);
-  };
-
-  // new useEffect:
-  React.useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+  const [show, setShow] = React.useState(false);
+  const [scroll, setScroll] = React.useState(0);
 
   const initial = {
-    position: "fixed",
+    width: "100vw",
+    // backgroundColor: "",
   };
 
-  const stylenew = {
-    position: "fixed",
+  const changeInitial = {
+    width: "100vw",
+    backgroundColor: "black",
+  };
+  console.log({ scroll });
+
+  React.useEffect(() => {
+    let handleScroll = () => {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      console.log(
+        "document.documentElement.scrollTop",
+        document.documentElement.scrollTop,
+        window.pageYOffset
+      );
+      if (st > lastScroll) {
+        // down
+        setScroll(1);
+      } else {
+        // up
+        setScroll(0);
+      }
+      lastScroll = st <= 0 ? 0 : st;
+    };
+    document.addEventListener("scroll", handleScroll, false);
+    return () => {
+      document.removeEventListener("scroll", handleScroll, false);
+    };
+  });
+  
+
+  const initial = {
+    margin:'2px'
+  };
+
+  const changeInitial = {
     background: "#777",
   };
+  
 
 
   return (
     <>
-      <nav className="navbar" style={visible ? initial : stylenew} >
+      <nav className="navbar" style={scroll !== 0 ? changeInitial : initial} >
         <div className="max-width">
           <div className="logo" >
             {" "}
