@@ -9,11 +9,6 @@ export const Nav = () => {
   React.useEffect(() => {
     let handleScroll = () => {
       var st = window.pageYOffset || document.documentElement.scrollTop;
-      console.log(
-        "document.documentElement.scrollTop",
-        document.documentElement.scrollTop,
-        window.pageYOffset
-      );
       if (st > lastScroll) {
         // down
         setScroll(1);
