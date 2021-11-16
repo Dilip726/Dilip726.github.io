@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Nav = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = React.useState(0);
+  const [visible, setVisible] = React.useState(true);
     
   const handleScroll = () => {
 
