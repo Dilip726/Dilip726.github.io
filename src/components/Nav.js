@@ -7,11 +7,6 @@ export const Nav = () => {
   const [show, setShow] = React.useState(false);
   const [scroll, setScroll] = React.useState(0);
 
-  const initial = {
-    width: "100vw",
-    // backgroundColor: "",
-  };
-
   const changeInitial = {
     width: "100vw",
     backgroundColor: "black",
