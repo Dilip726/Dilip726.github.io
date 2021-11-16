@@ -4,8 +4,7 @@ export const Loading = () => {
     return (
         <>
         <div style={{width:'100%' , height:'100vh' , display:'flex' , flexDirection:'column' , justifyContent:'center' , alignItems:'center'}} >
-            <h1 style={{color:"crimson"}}>Welcome</h1>
-            <img src="..\Img\pikachu.png" alt="" width="500px" height='500px'/>
+            <img src="https://images.unsplash.com/photo-1595853035070-59a39fe84de3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" alt="" width="100vw" height='100vh'/>
         </div>
         </>
     )
