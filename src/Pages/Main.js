@@ -249,21 +249,28 @@ export const Main = () => {
                 <div className="bars ">
                   <div className="info ">
                     <span>Node Js</span>
-                    <span>40%</span>
+                    <span>65%</span>
                   </div>
                   <div className="line NodeJs " />
                 </div>
                 <div className="bars ">
                   <div className="info ">
                     <span>Express Js</span>
-                    <span>35%</span>
+                    <span>50%</span>
+                  </div>
+                  <div className="line NodeJs " />
+                </div>
+                <div className="bars ">
+                  <div className="info ">
+                    <span>Express Js</span>
+                    <span>20%</span>
                   </div>
                   <div className="line NodeJs " />
                 </div>
                 <div className="bars ">
                   <div className="info ">
                     <span>MongoDB</span>
-                    <span>35%</span>
+                    <span>45%</span>
                   </div>
                   <div className="line MySQL " />
                 </div>
