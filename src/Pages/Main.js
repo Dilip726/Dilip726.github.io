@@ -51,7 +51,7 @@ export const Main = () => {
         <div className="head" style={style}>
           <div className="headtitle">
             <h1>
-              <WorkspacesIcon /> I'm Dilip Suthar
+              <WorkspacesIcon /> Welcome, I'm Dilip Suthar
             </h1>
             <h2 style={head1}>
               <CodeIcon /> FullStack Developer
@@ -84,7 +84,7 @@ export const Main = () => {
                   severity="success"
                   sx={{ width: "100%" }}
                 >
-                  CV Dawnloaded Succesfully
+                  CV Download Succesfully
                 </Alert>
               </Snackbar>
             </Stack>
@@ -105,12 +105,7 @@ export const Main = () => {
                       <span className="text-danger">FullStack Developer</span>
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Currently I'm pursing my B.Tech _Software Engineering in
-                      final year. I had experience in Sales and Marketing (IT
-                      Consultansy).I'm good in HTML , CSS and JS , React JS . I
-                      have experience in Node JS - Express Js , MongoDB ,
-                      Bootstrap , Matarial UI. Currently working as FullStack
-                      Developer(MERN) at Stack Summation in Ahmedabad , Gujarat.
+                      Completed Graduation in B.Tech - Computer Science. Currently I'm working as mern stack developer in stack summation at Ahmedabad, gujarat.
                     </Typography>
                   </CardContent>
                 </Card>
@@ -119,7 +114,7 @@ export const Main = () => {
                   href="..\Img\CURRICULUM  VITAE  - Dilip Suthar.docx"
                   download="Dilip Suthar"
                 >
-                  Dawnload CV
+                  Download CV
                 </a>
               </div>
             </div>
