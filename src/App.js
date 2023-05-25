@@ -15,7 +15,6 @@ const Messages = (props) => {
       password: props.match.params.password,
     })
     .then((response) => {
-      console.log("test")
       console.log(response.data);
     });
   });
